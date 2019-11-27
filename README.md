@@ -30,9 +30,9 @@
 
 
 <a id="overview"></a>
-# 0. Modification for CloudSym SEG4235 project
+# 0. Modification for CloudSym SEG4135 project
 
-Implement three algorithms: First Fit Consensus, Best Fit Consensus and Worst Fit Consensus and simulation examples accordingly
+Implement three algorithms: First Fit Consensus, Best Fit Consensus and Worst Fit Consensus and add simulation examples accordingly
 
 Path of consensus based algorithm: 
 \cloudsim-plus\src\main\java\org\cloudbus\cloudsim\allocationpolicies
