@@ -30,6 +30,16 @@
 
 
 <a id="overview"></a>
+# 0. Modification for CloudSym SEG4235 project
+
+Implement three algorithms: First Fit Consensus, Best Fit Consensus and Worst Fit Consensus and simulation examples accordingly
+
+Path of consensus based algorithm: 
+\cloudsim-plus\src\main\java\org\cloudbus\cloudsim\allocationpolicies
+
+Path of simulation programs:
+\cloudsim-plus-examples\src\main\java\org\cloudsimplus\examples
+
 
 # 1. CloudSim Plus Overview [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20CloudSim%20Plus:%20a%20modern%20and%20full-featured%20framework%20for%20cloud%20computing%20simulation.%20It's%20actively%20maintained%20and%20fully%20documented,%20making%20your%20research%20easier.%20via%20@manoelcampos&url=https://cloudsimplus.org&hashtags=cloudsimplus,cloud,computing,simulation,framework) [![GitHub stars](https://img.shields.io/github/stars/manoelcampos/cloudsim-plus.svg?style=social&label=Contribute.%20Star%20It.%20&#11088;%20&#128077;&maxAge=2592000)](https://github.com/manoelcampos/cloudsim-plus/)
 
