@@ -12,7 +12,7 @@ public class VmAllocationPolicyBestFitConsensus extends VmAllocationPolicyAbstra
 
 	@Override
 	protected Optional<Host> defaultFindHostForVm(Vm vm) {
-		
+		Random rand = new Random();
 		final int maxTries = getHostList().size();
         final Comparator<Host> activeComparator = Comparator.comparing(Host::isActive).reversed();
         final Comparator<Host> comparator = activeComparator.thenComparingLong(Host::getFreePesNumber);
