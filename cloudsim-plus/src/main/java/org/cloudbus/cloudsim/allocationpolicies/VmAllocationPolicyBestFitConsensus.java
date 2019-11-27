@@ -12,7 +12,6 @@ public class VmAllocationPolicyBestFitConsensus extends VmAllocationPolicyAbstra
 
 	@Override
 	protected Optional<Host> defaultFindHostForVm(Vm vm) {
-		Random rand = new Random();
 		final int maxTries = getHostList().size();
         final Comparator<Host> activeComparator = Comparator.comparing(Host::isActive).reversed();
         final Comparator<Host> comparator = activeComparator.thenComparingLong(Host::getFreePesNumber);
@@ -40,16 +39,3 @@ public class VmAllocationPolicyBestFitConsensus extends VmAllocationPolicyAbstra
         }		
 	}
 }
-
-
-//Optional<Host> opHost = stream.filter(host -> host.isSuitableForVm(vm)).min(comparator);
-//if(opHost.isPresent()) {
-//	int vote = 1 + random.nextInt(maxTries);
-//	if(vote >= maxTries/2) {
-//		return opHost;
-//	}else {
-//		return Optional.empty();
-//	}
-//}else {
-//	return opHost;
-//}
